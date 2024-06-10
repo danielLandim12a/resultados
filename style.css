@@ -10,7 +10,7 @@
     --resultado-bg: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
     --media-bg: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%);
     --white:#FFF;
-    --light-blue #CAC9FF;
+    --light-blue: #CAC9FF;
     --dark-navy: #303B59;
     --resumo-div-bg:linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%); 
     --reacao-bg: #FF5555;
@@ -100,7 +100,7 @@ body {
     color: var(--dark-navy);
 }
 
-.resumo > div strong span{
+.resumo > div strong span {
     opacity: 0.5;
 }
 
@@ -139,13 +139,14 @@ body {
     font-weight: 700;
 }
 
-@media (min_width: 736px); {
+@media (min-width: 736px) {
     body {
         min-height: 100svh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -154,56 +155,59 @@ body {
         border-radius: 3.2rem;
     }
 
-.Resultado {
-    padding-block: 3.8rem;
-    border-radius: 3.2rem;
-}
+    .resultado {
+        padding-block: 3.8rem;
+        border-radius: 3.2rem;
+    }
 
-.Resultado h1 {
-    font-size: 2.4rem;
-    margin-bottom: 3rem;
-}
+    .resultado h1 {
+        font-size: 2.4rem;
+        margin-bottom: 3.6rem;
+    }
 
-.Resultado div {
-    width: 20rem;
-    height: 20rem;
-    margin-bottom: 2.8rem;
-}
+    .resultado div {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 2.8rem;
+    }
 
-.Resultado div strong:nth-of-type(1) {
-    font-size: 7.2rem;
-}
+    .resultado div strong:nth-of-type(1) {
+        font-size: 7.2rem;
+    }
 
-.Resultado div strong:nth-of-type(2) {
-    font-size: 1.8rem;
-}
+    .resultado div strong:nth-of-type(2) {
+        font-size: 1.8rem;
+    }
 
-.Resultado h2 {
-    font-size: 3.2rem;
-    margin-bottom: 1.6rem;
-}
+    .resultado h2 {
+        font-size: 3.2rem;
+        margin-bottom: 1.6rem;
+    }
 
-.Resultado p {
-    font-size: 1.8rem;
-}
+    .resultado p {
+        font-size: 1.8rem;
+    }
 
-.resumo {
-    padding: 3.8rem 4rem;
-    border-radius: 3.2rem;
-}
+    .resumo {
+        padding: 3.8rem 4rem;
+        border-radius: 3.2rem;
+    }
 
-.resumo h2 {
-    font-size: 2.4rem;
-    margin-bottom: 3rem;
-}
+    .resumo h2 {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+    }
 
-.resumo button {
-    margin-top: 2.4rem;
-}
+    .resumo div {
+        font-size: 1.8rem;
+    }
 
-.resumo button:hover {
-    background: var(--resultado-bg);
-    cursor: pointer;
-}
+    .resumo button {
+        margin-top: 2.4rem;
+    }
 
+    .resumo button:hover {
+        background: var(--resultado-bg);
+        cursor: pointer;
+    }
 }
